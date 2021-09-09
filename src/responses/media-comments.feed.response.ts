@@ -110,3 +110,24 @@ export interface MediaCommentsFeedResponsePreviewCommentsItem {
   comment_like_count: number;
   parent_comment_id?: string;
 }
+
+export interface MediaLikersFeedResponse {
+  users: MediaLikersFeedResponseLikersItem[];
+  user_count: number;
+  status: string;
+  next_max_id: string;
+  next_min_id: string;
+}
+
+export interface MediaLikersFeedResponseLikersItem {
+  pk: number;
+  username: string;
+  full_name: string;
+  is_private: boolean;
+  profile_pic_url: string;
+  profile_pic_id?: string;
+  is_verified: boolean;
+  latest_reel_media?: number;
+  next_max_id: string;
+  next_min_id: string;
+}
