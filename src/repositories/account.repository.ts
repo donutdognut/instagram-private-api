@@ -1,3 +1,4 @@
+// @ts-ignore
 import { Repository } from '../core/repository';
 import {
   AccountRepositoryCurrentUserResponseRootObject,
