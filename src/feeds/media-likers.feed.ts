@@ -30,6 +30,6 @@ export class MediaLikersFeed extends Feed<MediaLikersFeedResponse, MediaLikersFe
 
   async items() {
     const response = await this.request();
-    return response.likers;
+    return response.users;
   }
 }
